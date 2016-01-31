@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+</head>
+<body>
+
+    <div ng-app="app" ng-controller="demoCtrl">
+        <p ng-bind-html="testString | nl2br"></p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="index.js"></script>
+    <script>
+        angular.module('app', ['nl2br-filter'])
+        .controller('demoCtrl', function ($scope, $sce) {
+            $scope.testString = `Text
+                                 with newlines.
+
+                                 And <b>HTML</b> that should become escaped.`;
+        });
+    </script>
+
+</body>
+</html>
