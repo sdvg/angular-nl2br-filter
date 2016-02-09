@@ -1,6 +1,6 @@
 {
   "name": "angular-nl2br-filter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Angular 1.x filter that converts newlines to `<br>`-tags.",
   "license": "MIT",
   "repository": "sdvg/angular-nl2br-filter",
@@ -39,10 +39,12 @@
   "xo": {
     "space": 4,
     "env": [
-      "browser", "jasmine"
+      "browser",
+      "jasmine"
     ],
     "globals": [
-      "angular", "inject"
+      "angular",
+      "inject"
     ]
   }
 }
