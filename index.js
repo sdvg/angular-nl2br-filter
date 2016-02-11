@@ -10,7 +10,10 @@ angular.module('nl2br-filter', [])
     }
 
     return function (input) {
-        if (typeof input == 'undefined') return input;
+        if (typeof input === 'undefined') {
+            return input;
+        }
+
         var sanitizedInput = escapeHTML(input);
         var html = sanitizedInput.replace(/\n/g, '<br>');
 

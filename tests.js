@@ -24,4 +24,11 @@ describe('nl2br-filter', function () {
 
         expect(result.$$unwrapTrustedValue()).toEqual('row1<br>row2');
     });
+
+    it('should return `undefined` if the input is undefined', function () {
+        var testStr;
+        var result = $filter('nl2br')(testStr);
+
+        expect(result).toBeUndefined();
+    });
 });
