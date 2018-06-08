@@ -27,7 +27,7 @@
     "angular": "^1.4.9"
   },
   "devDependencies": {
-    "angular-mocks": "^1.4.9",
+    "angular-mocks": "^1.7.1",
     "ava": "^0.24.0",
     "jasmine-core": "^2.4.1",
     "karma": "^2.0.0",
